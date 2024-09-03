@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Formu</title>
+    
+    <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/all.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Formun Başlığı -->
+        <h1 id="title">Kayıt Formu</h1>
+        
+        <!-- Formun Açıklaması -->
+         <p id="description">Aşağıdaki kayıt formu doldurunuz.</p>
+        <form action="get" id="survey-form">
+            <div class="input">
+                <label class="name" id="name-label" for="text">
+                    <i class="fa-solid fa-person icon"></i>
+                    Full Name
+                </label>
+                <input type="text" name="name" id="name" placeholder="Adınızı giriniz." required>
+                <br>
+                <br>
+        
+                <!-- E-mail -->
+                 
+                <i class="fa-regular fa-envelope icon-mail"></i> Mail
+                <input type="email" name="e-mail" id="e-mail"> 
+                <br>
+                <br>
+                <!-- Sayı Giriş Alanı -->
+                
+                <label id="number-label" for="number">
+                    <i class="fa-solid fa-cake-candles icon-age"></i>
+                    Age
+                </label>
+                <input type="number" name="number" id="number" min="20" max="30">
+                <br>
+                <br>
+                <!-- Seçim Kutusu -->
+                <label for="dropdown">Gender</label>
+                <select name="dropdown" id="dropdown" required>
+                    <option value="" disabled selected>Bir seçenek seçiniz</option>
+                    <option value="male">Erkek</option>
+                    <option value="female">Kadın</option>
+                </select>
+                <br>
+                <br>
+                <!-- Radyo Düğmeleri -->
+                <label>Where did you us ?</label>
+                <br>
+                <input type="radio" name="where" value="Instagram"> Instagram
+                <br>
+                <br>
+                <input type="radio" name="where" value="Linkedn"> Linkedn
+                <br>
+                <br>
+        
+                <!-- Onay Kutuları -->
+                <input type="checkbox" name="service" value="service"> Terms Of Service
+                <br>
+                <input type="checkbox" name="news" value="news"> Subscribe For News
+                    <br>
+                <br>
+                <!-- Metin Alanı -->
+                <textarea name="suggestions" id="suggestions" placeholder="Suggestions.."></textarea>
+                
+                <br>
+                <button id="submit">Sign Up</button>
+            </div>
+            <!-- İsim -->
+            
+    
+         </form>
+    </div>
+     
+</body>
+</html>
